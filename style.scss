@@ -221,6 +221,7 @@ a {
   }
 
   button {
+    margin: 24px 0 50px;
     font-size: 1.2rem;
     font-weight: 600;
     padding: 16px 24px;
@@ -263,9 +264,15 @@ a {
 }
 .products-items:nth-child(3) {
   position: relative;
+
+  button {
+    background-color: $color-4;
+  }
+
   .product-price {
     background-color: $color-4;
   }
+
   .product-title {
     background-color: $white-color;
     h3 {
@@ -278,6 +285,7 @@ a {
     }
   }
 }
+
 .product-new-tag {
   position: absolute;
   padding: 20px 10px;
@@ -301,4 +309,84 @@ a {
 .products-items:nth-child(2),
 .products-items:nth-child(1) {
   margin-top: 30px;
+}
+
+.product-description {
+  li:nth-of-type(3),
+  li:nth-of-type(4),
+  li:nth-of-type(5) {
+    text-decoration: line-through;
+  }
+}
+
+// footer
+.footer {
+  background-color: #181828;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 46px 0;
+}
+
+.footer-copyright {
+  span {
+    color: $primary-color;
+  }
+}
+
+.footer-bars {
+  display: flex;
+
+  a {
+    display: inline-block;
+    color: $white-color;
+    padding: 0 20px;
+    border-right: 1px solid $white-color;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  li:last-child {
+    a {
+      border: none;
+    }
+  }
+}
+
+.footer-social {
+  display: flex;
+
+  .fa-facebook-f {
+    color: #4e64b5;
+  }
+  .fa-linkedin-in {
+    color: #0288d1;
+  }
+  .fa-twitter {
+    color: #00aced;
+  }
+  .fa-instagram {
+    color: #9a8f62;
+  }
+  .fa-pinterest-p {
+    color: #ff5757;
+  }
+  .fa-youtube {
+    color: #c82929;
+  }
+  a {
+    font-size: 1.6rem;
+    display: inline-block;
+    margin: 0 6px;
+    transition: all 0.3s;
+  }
 }

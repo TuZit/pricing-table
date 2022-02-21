@@ -207,6 +207,7 @@ a {
   border-top: 1px solid #dfe5e8;
 }
 .product-description button {
+  margin: 24px 0 50px;
   font-size: 1.2rem;
   font-weight: 600;
   padding: 16px 24px;
@@ -245,6 +246,9 @@ a {
 .products-items:nth-child(3) {
   position: relative;
 }
+.products-items:nth-child(3) button {
+  background-color: #83bce9;
+}
 .products-items:nth-child(3) .product-price {
   background-color: #83bce9;
 }
@@ -281,6 +285,75 @@ a {
 .products-items:nth-child(2),
 .products-items:nth-child(1) {
   margin-top: 30px;
+}
+
+.product-description li:nth-of-type(3),
+.product-description li:nth-of-type(4),
+.product-description li:nth-of-type(5) {
+  text-decoration: line-through;
+}
+
+.footer {
+  background-color: #181828;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 46px 0;
+}
+
+.footer-copyright span {
+  color: #00bcd4;
+}
+
+.footer-bars {
+  display: flex;
+}
+.footer-bars a {
+  display: inline-block;
+  color: #fff;
+  padding: 0 20px;
+  border-right: 1px solid #fff;
+  transition: all 0.3s;
+}
+.footer-bars a:hover {
+  color: #00bcd4;
+}
+.footer-bars li:last-child a {
+  border: none;
+}
+
+.footer-social {
+  display: flex;
+}
+.footer-social .fa-facebook-f {
+  color: #4e64b5;
+}
+.footer-social .fa-linkedin-in {
+  color: #0288d1;
+}
+.footer-social .fa-twitter {
+  color: #00aced;
+}
+.footer-social .fa-instagram {
+  color: #9a8f62;
+}
+.footer-social .fa-pinterest-p {
+  color: #ff5757;
+}
+.footer-social .fa-youtube {
+  color: #c82929;
+}
+.footer-social a {
+  font-size: 1.6rem;
+  display: inline-block;
+  margin: 0 6px;
+  transition: all 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */
