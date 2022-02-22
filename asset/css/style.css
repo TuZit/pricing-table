@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  line-height: 1;
+  max-width: 1920px;
+}
+
+.title--left {
+  font-weight: 200;
+}
+
+.title--right {
+  font-weight: 800;
+}
+
+.header {
+  background-color: #2c2e3d;
+  color: #fff;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar-logo {
+  display: inline-block;
+  padding: 21px 0;
+}
+
+.navbar-items {
+  border: 2px solid transparent;
+}
+.navbar-items a {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  transition: all 0.3s;
+}
+.navbar-items a:hover {
+  color: #00bcd4;
+}
+
+.active-nav {
+  border-color: #fff;
+}
+
+.uk-logo {
+  height: 13px;
+  width: 18px;
+}
+
+.introduce {
+  background-color: #2c2e3d;
+  color: #fff;
+  text-align: center;
+}
+
+.introduce__icon {
+  font-size: 8rem;
+  color: #00bcd4;
+  padding: 144px 0 112px 0;
+}
+
+.introduce-title {
+  font-size: 5rem;
+}
+
+.introduce-description {
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 1.5;
+  width: 1080px;
+  margin: 66px auto 84px;
+}
+
+.introduce-button {
+  font-size: 1.6rem;
+  gap: 16px;
+}
+.introduce-button button {
+  font-weight: 700;
+  border: 2px solid #fff;
+  background-color: transparent;
+  padding: 16px 48px;
+  border-radius: 30px;
+  margin: 0 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.introduce-button button:hover {
+  background-color: #83bce9;
+  color: #fff;
+  border-color: #fff;
+}
+.introduce-button .btn-left {
+  color: #fff;
+}
+.introduce-button .btn-right {
+  border-color: #00bcd4;
+  color: #00bcd4;
+}
+
+.introduce__pagination {
+  padding: 148px 0 46px;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  border: 4px solid #2c2e3d;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 8px;
+  outline: 3px solid #fff;
+}
+
+.dot.dot-active {
+  background-color: #00bcd4;
+}
+
+.services {
+  padding: 142px 0;
+  color: #3c3950;
+}
+
+.service-wrap {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.services-title {
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.services-description {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  margin: 80px 0;
+}
+
+.services-products {
+  display: flex;
+}
+
+.products-items {
+  flex-basis: 25%;
+  text-align: center;
+  border: 1px solid #dfe5e8;
+}
+
+.product-title {
+  font-size: 1.8rem;
+  padding: 36px 0;
+  background-color: #f0f3f2;
+}
+
+.product-price {
+  background-color: #b0de79;
+  color: #fff;
+  padding: 36px 0;
+}
+.product-price h4 {
+  font-size: 5rem;
+  font-weight: 200;
+}
+.product-price p {
+  font-size: 1.4rem;
+  margin-top: 12px;
+}
+
+.product-description {
+  background-color: #f0f3f2;
+}
+.product-description li {
+  font-size: 1.4rem;
+  padding: 20px 0;
+  border-top: 1px solid #dfe5e8;
+}
+.product-description button {
+  margin: 24px 0 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 30px;
+  background-color: #393d50;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.product-description button:hover {
+  background-color: #83bce9;
+}
+.product-description button i {
+  margin-right: 6px;
+}
+
+.product-sub-description {
+  text-align: center;
+  height: 80px;
+}
+.product-sub-description h4 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  padding: 20px 0;
+}
+.product-sub-description p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.products-items:nth-child(2) .product-price {
+  background-color: #7ee0bf;
+}
+
+.products-items:nth-child(3) {
+  position: relative;
+}
+.products-items:nth-child(3) button {
+  background-color: #83bce9;
+}
+.products-items:nth-child(3) .product-price {
+  background-color: #83bce9;
+}
+.products-items:nth-child(3) .product-title {
+  background-color: #fff;
+}
+.products-items:nth-child(3) .product-title h3 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+.products-items:nth-child(3) .product-title p {
+  font-size: 1.4rem;
+  padding-top: 16px;
+}
+
+.product-new-tag {
+  position: absolute;
+  padding: 20px 10px;
+  border-radius: 50%;
+  background-color: #2c2e3d;
+  color: #fff;
+  top: 0;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.products-items:nth-child(4) .product-price {
+  background-color: #a289e8;
+}
+
+.products-items:nth-child(4),
+.products-items:nth-child(2),
+.products-items:nth-child(1) {
+  margin-top: 30px;
+}
+
+.product-description li:nth-of-type(3),
+.product-description li:nth-of-type(4),
+.product-description li:nth-of-type(5) {
+  text-decoration: line-through;
+}
+
+.footer {
+  background-color: #181828;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 46px 0;
+}
+
+.footer-copyright span {
+  color: #00bcd4;
+}
+
+.footer-bars {
+  display: flex;
+}
+.footer-bars a {
+  display: inline-block;
+  color: #fff;
+  padding: 0 20px;
+  border-left: 1px solid #fff;
+  transition: all 0.3s;
+}
+.footer-bars a:hover {
+  color: #00bcd4;
+}
+.footer-bars li:first-child a {
+  border: none;
+}
+
+.footer-social {
+  display: flex;
+}
+.footer-social .fa-facebook-f {
+  color: #4e64b5;
+}
+.footer-social .fa-linkedin-in {
+  color: #0288d1;
+}
+.footer-social .fa-twitter {
+  color: #00aced;
+}
+.footer-social .fa-instagram {
+  color: #9a8f62;
+}
+.footer-social .fa-pinterest-p {
+  color: #ff5757;
+}
+.footer-social .fa-youtube {
+  color: #c82929;
+}
+.footer-social a {
+  font-size: 1.6rem;
+  display: inline-block;
+  margin: 0 6px;
+  transition: all 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */
