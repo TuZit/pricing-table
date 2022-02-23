@@ -1,5 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-@media screen and (max-width: 560px) {
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.pt-36 {
+  padding-top: 36px;
+}
+
+.pb-36 {
+  padding-bottom: 36px;
+}
+
+.p-4 {
+  padding: 4px;
+}
+
+.disable-text {
+  text-decoration: line-through;
+}
+
+.section-min-height {
+  min-height: 357px;
+}
+
+.bottom-dash {
+  border-bottom: 1px dashed #50586a;
+}
+
+@media screen and (max-width: 600px) {
   .navbar {
     display: none;
   }
@@ -73,6 +112,13 @@
     padding-bottom: 60px;
   }
 
+  .banner .container {
+    padding: 0 42px;
+  }
+  .banner h2 {
+    font-size: 4.2rem;
+  }
+
   .footer-container {
     position: relative;
     flex-wrap: wrap;
@@ -82,6 +128,13 @@
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .sub-footer-container {
+    flex-direction: column-reverse;
+  }
+  .sub-footer-container p {
+    font-size: 1.5rem;
   }
 
   .footer-bars {
@@ -96,23 +149,44 @@
     padding: 0 16px;
   }
 
+  .main-footer__section {
+    margin-bottom: 0;
+  }
+
+  .main-footer__items {
+    flex-basis: 100%;
+  }
+
+  .footer > .container {
+    padding: 0 21px;
+  }
+
+  .footer-grid {
+    justify-content: flex-start;
+  }
+
+  .section-min-height {
+    min-height: 0 !important;
+  }
+
   .go-top {
-    display: inline-block;
-    padding: 16px;
-    font-size: 1.8rem;
-    color: #fff;
-    background-color: #132f33;
-    opacity: 0.5;
-    position: absolute;
     right: 0;
-    bottom: 36px;
-    z-index: 100;
   }
 }
-@media screen and (min-width: 561px) {
+@media screen and (min-width: 601px) {
   .mobile-cart,
-.mobile-menu,
-.go-top {
+.mobile-menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .next-page {
+    right: -2%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .next-page,
+.prev-page {
     display: none;
   }
 }
