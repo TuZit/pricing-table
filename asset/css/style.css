@@ -439,6 +439,16 @@ a {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 46px;
+  display: inline-block;
+  position: relative;
+}
+.footer-title::before {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  right: -14px;
+  border-top: 7px solid transparent;
+  border-left: 7px solid #f50057;
 }
 
 .main-footer__section {
@@ -697,7 +707,7 @@ a {
   opacity: 0.5;
   position: fixed;
   right: 40px;
-  bottom: 70px;
+  bottom: 82px;
   z-index: 100;
   display: none;
 }

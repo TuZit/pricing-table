@@ -80,6 +80,10 @@
   }
 
   //   footer
+  .footer {
+    padding: 80px 0;
+  }
+
   .footer-container {
     position: relative;
     flex-wrap: wrap;
@@ -91,11 +95,13 @@
     padding-right: 20px;
   }
 
+  // sub footer
+
   .sub-footer-container {
     flex-direction: column-reverse;
 
     p {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
   }
 
@@ -108,9 +114,11 @@
       flex-basis: 30%;
     }
     a {
-      padding: 0 16px;
+      font-size: 1.4rem;
     }
   }
+
+  // main footer
   .main-footer__section {
     margin-bottom: 0;
   }
