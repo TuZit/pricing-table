@@ -206,15 +206,19 @@ a {
   flex-basis: 25%;
   min-width: 270px;
   text-align: center;
+  border: 1px solid $color-19;
   transition: all 0.4s;
 
   &:hover {
+    transform: scaleY(1.04);
+
     .product-title {
-      padding-bottom: 80px;
       background-color: $white-color;
+      // transform: translateY(-20px);
     }
     .product-description {
       background-color: $white-color;
+      transform: scaleY(1);
     }
   }
 }
@@ -224,6 +228,7 @@ a {
   background-color: $color-1;
   min-height: 120px;
   transition: all 0.4s;
+  position: relative;
 }
 
 .product-price {
@@ -298,12 +303,6 @@ a {
 }
 
 .new-item {
-  position: relative;
-
-  button {
-    background-color: $color-4;
-  }
-
   .product-title {
     h3 {
       font-size: 1.8rem;
@@ -328,6 +327,7 @@ a {
   position: absolute;
   top: 0;
   left: 20%;
+  z-index: 100;
   transform: translate(-50%, -50%);
   font-size: 1.2rem;
   font-weight: 600;

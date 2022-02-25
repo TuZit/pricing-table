@@ -255,14 +255,18 @@ a {
   flex-basis: 25%;
   min-width: 270px;
   text-align: center;
+  border: 1px solid #dfe5e8;
   transition: all 0.4s;
 }
+.products-items:hover {
+  transform: scaleY(1.04);
+}
 .products-items:hover .product-title {
-  padding-bottom: 80px;
   background-color: #fff;
 }
 .products-items:hover .product-description {
   background-color: #fff;
+  transform: scaleY(1);
 }
 
 .product-title {
@@ -271,6 +275,7 @@ a {
   background-color: #f0f3f2;
   min-height: 120px;
   transition: all 0.4s;
+  position: relative;
 }
 
 .product-price {
@@ -341,12 +346,6 @@ a {
   background-color: #a289e8;
 }
 
-.new-item {
-  position: relative;
-}
-.new-item button {
-  background-color: #83bce9;
-}
 .new-item .product-title h3 {
   font-size: 1.8rem;
   font-weight: normal;
@@ -368,6 +367,7 @@ a {
   position: absolute;
   top: 0;
   left: 20%;
+  z-index: 100;
   transform: translate(-50%, -50%);
   font-size: 1.2rem;
   font-weight: 600;
