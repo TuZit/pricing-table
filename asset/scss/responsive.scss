@@ -160,10 +160,6 @@
     margin-top: 40px;
   }
 
-  .main-footer__items {
-    flex-basis: 40%;
-  }
-
   .section-min-height {
     min-height: 0;
   }
@@ -221,6 +217,16 @@
   }
   .gem-posts li:last-child {
     padding-bottom: 0;
+  }
+  .main-footer__items {
+    flex-basis: 40%;
+  }
+  .main-footer-container {
+    align-items: flex-start;
+
+    .section-min-height {
+      min-height: 0;
+    }
   }
 }
 
