@@ -168,6 +168,7 @@ a {
 
   &:hover {
     background-color: $primary-color;
+    opacity: 1 !important;
   }
 }
 .prev-page {
@@ -210,18 +211,15 @@ a {
   transition: all 0.4s;
 
   &:hover {
-    transform: scaleY(1.04);
-
     .product-title {
       background-color: $white-color;
-      // transform: translateY(-20px);
+      transform: translateY(-20px);
+      transform-origin: bottom left;
     }
     .product-description {
       background-color: $white-color;
-      transform: scale(1);
-    }
-    .product-price {
-      transform: scale(1);
+      transform: translateY(20px);
+      transform-origin: bottom left;
     }
   }
 }

@@ -217,6 +217,7 @@ a {
 .next-page:hover,
 .prev-page:hover {
   background-color: #00bcd4;
+  opacity: 1 !important;
 }
 
 .prev-page {
@@ -258,18 +259,15 @@ a {
   border: 1px solid #dfe5e8;
   transition: all 0.4s;
 }
-.products-items:hover {
-  transform: scaleY(1.04);
-}
 .products-items:hover .product-title {
   background-color: #fff;
+  transform: translateY(-20px);
+  transform-origin: bottom left;
 }
 .products-items:hover .product-description {
   background-color: #fff;
-  transform: scale(1);
-}
-.products-items:hover .product-price {
-  transform: scale(1);
+  transform: translateY(20px);
+  transform-origin: bottom left;
 }
 
 .product-title {
