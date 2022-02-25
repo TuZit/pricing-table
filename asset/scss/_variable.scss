@@ -27,6 +27,7 @@ $color-15: #494b58;
 $color-16: #132f33;
 $color-17: #50586a;
 $color-18: #f50057;
+$color-19: #dfe5e8;
 
 .fw-200 {
   font-weight: 200;
@@ -65,4 +66,20 @@ $color-18: #f50057;
 
 .bottom-dash {
   border-bottom: 1px dashed $color-17;
+}
+
+.border {
+  border: 1px solid $color-19;
+}
+.border-top {
+  border-top: 1px solid $color-19;
+}
+.border-bottom {
+  border-bottom: 1px solid $color-19;
+}
+.border-right {
+  border-right: 1px solid $color-19;
+}
+.border-left {
+  border-left: 1px solid $color-19;
 }

@@ -11,22 +11,6 @@
   .introduce-description {
     width: 100%;
   }
-  //   header
-  .mobile-cart,
-  .mobile-menu {
-    display: inline-block;
-    color: $white-color;
-    font-size: 1.8rem;
-  }
-  .header-wrap {
-    padding: 0 30px;
-  }
-  .navbar-logo {
-    padding: 11px 0;
-    img {
-      width: 90%;
-    }
-  }
 
   //   introduce
   .introduce__icon {
@@ -125,13 +109,10 @@
   .main-footer__items {
     flex-basis: 100%;
   }
-  .footer > .container {
-    padding: 0 21px;
-  }
+  // .footer > .container {
+  //   padding: 0 21px;
+  // }
 
-  .footer-grid {
-    justify-content: flex-start;
-  }
   .section-min-height {
     min-height: 0 !important;
   }
@@ -140,20 +121,107 @@
   }
 }
 
-@media screen and (min-width: 601px) {
+@media only screen and (max-width: 992px) {
+  .next-page,
+  .prev-page {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  //   header
+  .mobile-cart,
+  .mobile-menu {
+    display: inline-block;
+    color: $white-color;
+    font-size: 1.8rem;
+  }
+
+  .navbar-logo {
+    padding: 11px 0;
+    img {
+      width: 90%;
+    }
+  }
+
+  .main-footer-container {
+    padding-top: 40px;
+  }
+
+  .main-footer__section {
+    margin-top: 40px;
+  }
+
+  .main-footer__items {
+    flex-basis: 40%;
+  }
+
+  .section-min-height {
+    min-height: 0;
+  }
+
+  .footer-grid {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .main-footer__items {
+    min-width: 248px;
+  }
+  .main-footer__section {
+    margin-bottom: 0;
+  }
+  .main-footer-container {
+    gap: 0;
+  }
+
+  .footer-grid {
+    justify-content: flex-start;
+  }
+
+  .footer {
+    .container {
+      padding: 0 21px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 601px) {
+  .sub-footer-container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 993px) {
   .mobile-cart,
   .mobile-menu {
     display: none;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .mb-0 {
+    margin-bottom: 0;
+  }
+  .footer .container {
+    padding: 0 21px;
+  }
+}
+
 @media only screen and (min-width: 1600px) {
   .next-page {
     right: -2%;
   }
 }
-@media only screen and (max-width: 992px) {
-  .next-page,
-  .prev-page {
-    display: none;
+
+@media screen and (min-width: 993px) and (max-width: 1212px) {
+  .header-wrap {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .next-page {
+    right: -3.2%;
   }
 }

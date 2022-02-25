@@ -11,6 +11,7 @@
 html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -55,7 +56,6 @@ a {
   line-height: 1;
   max-width: 1920px;
   margin: 0 auto;
-  position: relative;
 }
 
 // header
@@ -107,6 +107,7 @@ a {
 
 // Introduce
 .introduce {
+  position: relative;
   @include bgcolor();
   text-align: center;
   position: relative;
@@ -160,10 +161,9 @@ a {
   font-size: 4rem;
   font-weight: normal;
   position: absolute;
-  top: 50%;
-  transform: translate(-50%);
   background-color: $color-6;
   padding: 20px 22px;
+  top: 50%;
   transition: all 0.3s;
 
   &:hover {
@@ -171,11 +171,11 @@ a {
   }
 }
 .prev-page {
-  left: 2%;
+  left: 0;
 }
 
 .next-page {
-  right: -3%;
+  right: 0;
 }
 
 // Services
@@ -199,18 +199,31 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  row-gap: 60px;
 }
 
 .products-items {
   flex-basis: 25%;
   min-width: 270px;
   text-align: center;
-  border: 1px solid #dfe5e8;
+  transition: all 0.4s;
+
+  &:hover {
+    .product-title {
+      padding-bottom: 80px;
+      background-color: $white-color;
+    }
+    .product-description {
+      background-color: $white-color;
+    }
+  }
 }
 .product-title {
   font-size: 1.8rem;
   padding: 36px 0;
   background-color: $color-1;
+  min-height: 120px;
+  transition: all 0.4s;
 }
 
 .product-price {
@@ -230,10 +243,11 @@ a {
 
 .product-description {
   background-color: $color-1;
+  transition: all 0.4s;
   li {
     font-size: 1.4rem;
     padding: 20px 0;
-    border-top: 1px solid #dfe5e8;
+    border-top: 1px solid $color-19;
   }
 
   button {
@@ -283,7 +297,7 @@ a {
   background-color: $color-5;
 }
 
-.products-items:nth-child(3) {
+.new-item {
   position: relative;
 
   button {
@@ -291,7 +305,6 @@ a {
   }
 
   .product-title {
-    background-color: $white-color;
     h3 {
       font-size: 1.8rem;
       font-weight: normal;
@@ -326,7 +339,7 @@ a {
   color: #fff;
   font-size: 1.4rem;
 
-  > .container {
+  .container {
     padding: 0;
   }
 }
@@ -409,13 +422,13 @@ a {
   align-items: center;
   flex-wrap: wrap;
   column-gap: 42px;
-
   color: $footer-text;
   font-size: 1.3rem;
   line-height: 1.5;
 }
 
 .main-footer__items {
+  // padding: 0 21px;
   flex-basis: 22%;
   min-width: 261px;
 }
@@ -704,4 +717,110 @@ a {
   bottom: 82px;
   z-index: 100;
   display: none;
+}
+
+// mobile modal
+.mobile-modal,
+.cart-modal {
+  position: fixed;
+  width: 100%;
+  inset: 0;
+  background-color: $white-color;
+  color: $color-6;
+  overflow: auto;
+  display: none;
+}
+.mobile-modal__body {
+  z-index: 10;
+}
+
+.mobile-modal__header {
+  position: relative;
+  margin-bottom: 60px;
+  width: 100%;
+  height: 66px;
+  line-height: 66px;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    padding: 11px 0;
+  }
+
+  i {
+    display: inline-block;
+    font-size: 2.8rem;
+    position: absolute;
+    top: 30%;
+    right: -2px;
+  }
+}
+
+.modal-list {
+  margin: 40px 0;
+  display: none;
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.5s ease;
+}
+
+.modal-text {
+  text-align: center;
+  font-size: 2.4rem;
+  position: relative;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  span {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+  }
+}
+.show {
+  display: block !important;
+  opacity: 1 !important;
+  height: auto;
+  transition: all 0.5s ease;
+}
+
+// cart modal
+.cart-modal {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translateX(-100%);
+  transition: all 0.4s;
+}
+.cart-modal__body {
+  width: 70%;
+  max-width: 450px;
+  height: 100vh;
+  background-color: $white-color;
+  z-index: 20;
+}
+
+.cart-modal__content {
+  padding: 24px;
+  font-size: 1.6rem;
+}
+.cart-modal__header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.close-cart-modal {
+  font-size: 2.4rem;
+}
+
+.cart-modal__text {
+  opacity: 0.8;
+  padding: 20px 0;
 }
