@@ -266,7 +266,10 @@ a {
 }
 .products-items:hover .product-description {
   background-color: #fff;
-  transform: scaleY(1);
+  transform: scale(1);
+}
+.products-items:hover .product-price {
+  transform: scale(1);
 }
 
 .product-title {

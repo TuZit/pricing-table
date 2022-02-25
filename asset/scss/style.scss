@@ -218,7 +218,10 @@ a {
     }
     .product-description {
       background-color: $white-color;
-      transform: scaleY(1);
+      transform: scale(1);
+    }
+    .product-price {
+      transform: scale(1);
     }
   }
 }
