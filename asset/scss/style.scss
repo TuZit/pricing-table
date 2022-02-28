@@ -217,13 +217,12 @@ a {
     }
 
     .products-items__effect-bot {
-      // transform: scaleY(1.5);
-      transform: translateY(20px);
+      transform: scaleY(1.5);
+      // transform: translateY(20px);
     }
     .product-title {
-      transform: translateY(-20px);
-      // transform: scaleY(1.5);
-      transform-origin: bottom bottom;
+      // transform: translateY(-20px);
+      transform: scaleY(1.5);
       background-color: $white-color;
     }
     .product-description {
