@@ -70,6 +70,8 @@ $color-19: #dfe5e8;
 
 .border {
   border: 1px solid $color-19;
+  border-bottom: none !important;
+  border-top: none !important;
 }
 .border-top {
   border-top: 1px solid $color-19;
