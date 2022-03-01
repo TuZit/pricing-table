@@ -110,7 +110,6 @@ a {
   position: relative;
   @include bgcolor();
   text-align: center;
-  position: relative;
 }
 .introduce__icon {
   font-size: 8rem;
@@ -213,11 +212,6 @@ a {
 
   &:hover {
     background-color: $white-color;
-
-    // .products-items__effect-bot,
-    // .products-items__effect-top {
-    //   transform: scaleY(2.5);
-    // }
 
     .space {
       transform: scaleY(2.5);
@@ -346,10 +340,7 @@ a {
   background-color: $bg-color;
   color: $white-color;
   position: absolute;
-  top: -15%;
-  left: 20%;
-  z-index: 100;
-  transform: translate(-50%, -50%);
+  transform: translate(50%, -90%);
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -449,7 +440,6 @@ a {
 }
 
 .main-footer__items {
-  // padding: 0 21px;
   flex-basis: 22%;
   min-width: 261px;
 }

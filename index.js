@@ -37,7 +37,6 @@ closeModal.addEventListener("click", () => {
 const closeCart = document.querySelector(".close-cart-modal");
 const openCart = document.querySelector(".mobile-cart");
 const cartModal = document.querySelector(".cart-modal");
-// const cartModalBody = document.querySelector(".cart-modal__body");
 
 openCart.addEventListener("click", (e) => {
   e.preventDefault();
