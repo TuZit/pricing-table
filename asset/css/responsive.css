@@ -308,5 +308,10 @@
     margin-bottom: 70px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .gem-logo--bot {
+    margin-top: -70px;
+  }
+}
 
 /*# sourceMappingURL=responsive.css.map */
