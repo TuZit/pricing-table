@@ -244,7 +244,6 @@ a {
   font-size: 1.8rem;
   padding: 36px 0;
   transition: all 0.4s;
-  position: relative;
 }
 
 .product-price {
@@ -318,6 +317,8 @@ a {
 }
 
 .new-item {
+  position: relative;
+
   .product-title {
     h3 {
       font-size: 1.8rem;
@@ -326,6 +327,12 @@ a {
     p {
       font-size: 1.4rem;
       padding-top: 16px;
+    }
+  }
+
+  &:hover {
+    .product-new-tag {
+      transform: translateY(-80%);
     }
   }
 }
@@ -339,10 +346,15 @@ a {
   border-radius: 50%;
   background-color: $bg-color;
   color: $white-color;
+
   position: absolute;
-  transform: translate(50%, -90%);
+  transform: translateY(-50%);
+  left: 24px;
+  z-index: 10;
+
   font-size: 1.2rem;
   font-weight: 600;
+  transition: all 0.4s;
 }
 
 // footer.
