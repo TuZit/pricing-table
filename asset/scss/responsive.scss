@@ -228,12 +228,21 @@
       min-height: 0;
     }
   }
+
+  .main-footer-container {
+    padding: 80px 0;
+  }
 }
 
 @media screen and (min-width: 993px) and (max-width: 1212px) {
   .header-wrap {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .main-footer__section {
+    margin-top: 0;
+    margin-bottom: 70px;
   }
 }
 

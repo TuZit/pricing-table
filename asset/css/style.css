@@ -383,7 +383,7 @@ a {
   background-color: #2c2e3d;
   color: #fff;
   position: absolute;
-  top: 0;
+  top: -15%;
   left: 20%;
   z-index: 100;
   transform: translate(-50%, -50%);
