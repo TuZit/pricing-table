@@ -114,7 +114,7 @@ a {
   flex-wrap: wrap;
 }
 
-.navbar-logo {
+.navbar__logo {
   display: inline-block;
   padding: 21px 0;
 }
@@ -157,22 +157,22 @@ a {
   padding: 144px 0 112px 0;
 }
 
-.introduce-title {
+.introduce__title {
   font-size: 5rem;
 }
 
-.introduce-description {
+.introduce__description {
   font-size: 2rem;
   font-weight: 200;
   line-height: 1.5;
   margin: 66px 0 84px 0;
 }
 
-.introduce-button {
+.introduce__button {
   font-size: 1.6rem;
   gap: 16px;
 }
-.introduce-button button {
+.introduce__button button {
   font-weight: 700;
   border: 2px solid #fff;
   background-color: transparent;
@@ -183,7 +183,7 @@ a {
   color: #fff;
   transition: all 0.3s;
 }
-.introduce-button button:hover {
+.introduce__button button:hover {
   border-color: #00bcd4;
   color: #00bcd4;
 }
@@ -238,18 +238,18 @@ a {
   color: #3c3950;
 }
 
-.services-title {
+.services__title {
   font-size: 3.6rem;
   text-align: center;
 }
 
-.services-description {
+.services__description {
   line-height: 1.5;
   font-size: 1.6rem;
   margin: 80px 0;
 }
 
-.services-products {
+.services__products {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,7 +289,7 @@ a {
   border: 1px solid #dfe5e8;
 }
 
-.product-title-container {
+.product-title__container {
   min-height: 120px;
 }
 
@@ -473,7 +473,7 @@ a {
   transition: all 0.3s;
 }
 
-.main-footer-container {
+.main-footer__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,14 +489,14 @@ a {
   min-width: 261px;
 }
 
-.footer-title {
+.footer__title {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 46px;
   display: inline-block;
   position: relative;
 }
-.footer-title::before {
+.footer__title::before {
   content: "";
   position: absolute;
   bottom: 8px;
@@ -639,7 +639,7 @@ a {
   background-color: #5f727f;
 }
 
-.footer-pagination {
+.footer__pagination {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -687,7 +687,7 @@ a {
   color: #fff;
 }
 
-.banner-wrap {
+.banner__wrap {
   max-width: 1004px;
   margin: 0 auto;
   padding-top: 220px;

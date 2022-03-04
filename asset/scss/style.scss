@@ -72,7 +72,7 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
-.navbar-logo {
+.navbar__logo {
   display: inline-block;
   padding: 21px 0;
 }
@@ -117,17 +117,17 @@ a {
   padding: 144px 0 112px 0;
 }
 
-.introduce-title {
+.introduce__title {
   font-size: 5rem;
 }
-.introduce-description {
+.introduce__description {
   font-size: 2rem;
   font-weight: 200;
   line-height: 1.5;
   margin: 66px 0 84px 0;
 }
 
-.introduce-button {
+.introduce__button {
   font-size: 1.6rem;
   gap: 16px;
 
@@ -184,17 +184,17 @@ a {
   color: $secondary-color;
 }
 
-.services-title {
+.services__title {
   font-size: 3.6rem;
   text-align: center;
 }
-.services-description {
+.services__description {
   line-height: 1.5;
   font-size: 1.6rem;
   margin: 80px 0;
 }
 
-.services-products {
+.services__products {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,7 +236,7 @@ a {
   border: 1px solid $color-19;
 }
 
-.product-title-container {
+.product-title__container {
   min-height: 120px;
 }
 
@@ -435,7 +435,7 @@ a {
 }
 
 // main footer
-.main-footer-container {
+.main-footer__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -451,7 +451,7 @@ a {
   min-width: 261px;
 }
 
-.footer-title {
+.footer__title {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 46px;
@@ -613,7 +613,7 @@ a {
     background-color: #5f727f;
   }
 }
-.footer-pagination {
+.footer__pagination {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -663,7 +663,7 @@ a {
   background-color: $color-15;
   color: $white-color;
 }
-.banner-wrap {
+.banner__wrap {
   max-width: 1004px;
   margin: 0 auto;
   padding-top: 220px;
