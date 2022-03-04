@@ -37,7 +37,8 @@
   .introduce-button {
     flex-wrap: wrap;
 
-    button {
+    .btn-left,
+    .btn-right {
       margin-bottom: 20px;
     }
   }
@@ -65,9 +66,9 @@
     .container {
       padding: 0 42px;
     }
-    h2 {
-      font-size: 4.2rem;
-    }
+  }
+  .banner__title {
+    font-size: 4.2rem;
   }
 
   //   footer
@@ -90,23 +91,13 @@
 
   .sub-footer-container {
     flex-direction: column-reverse;
-
-    p {
-      font-size: 1.4rem;
-    }
+    font-size: 1.4rem;
   }
 
   .footer-bars {
     flex-wrap: wrap;
     row-gap: 10px;
     justify-content: center;
-
-    li {
-      flex-basis: 30%;
-    }
-    a {
-      font-size: 1.4rem;
-    }
   }
 
   // main footer
@@ -139,7 +130,7 @@
 
   .navbar-logo {
     padding: 11px 0;
-    img {
+    .navbar-logo__image {
       width: 90%;
     }
   }
@@ -172,9 +163,6 @@
   }
   .main-footer__section {
     margin-bottom: 0;
-  }
-  .main-footer-container {
-    // gap: 0;
   }
 
   .footer-grid {

@@ -78,7 +78,7 @@ a {
 }
 
 .navbar-items {
-  a {
+  .navbar-items__link {
     display: inline-block;
     color: $white-color;
     font-size: 1.4rem;
@@ -245,17 +245,25 @@ a {
   padding: 36px 0;
   transition: all 0.4s;
 }
+.product-title__main {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+.product-title__sub {
+  font-size: 1.4rem;
+  padding-top: 16px;
+}
 
 .product-price {
   background-color: $color-2;
   color: $white-color;
   padding: 36px 0;
 
-  h4 {
+  .product-price__number {
     font-size: 5rem;
     font-weight: 200;
   }
-  p {
+  .product-price__text {
     font-size: 1.4rem;
     margin-top: 12px;
   }
@@ -263,13 +271,14 @@ a {
 
 .product-description {
   transition: all 0.4s;
-  li {
+
+  .product-description__text {
     font-size: 1.4rem;
     padding: 20px 0;
     border-top: 1px solid $color-19;
   }
 
-  button {
+  .product-description__button {
     margin: 24px 0 50px;
     font-size: 1.2rem;
     font-weight: 600;
@@ -285,7 +294,7 @@ a {
       background-color: $color-4;
     }
 
-    i {
+    .fa-caret-right {
       margin-right: 6px;
     }
   }
@@ -295,12 +304,12 @@ a {
   text-align: center;
   height: 80px;
 
-  h4 {
+  .product-sub-description__title {
     font-size: 1.8rem;
     font-weight: normal;
     padding: 20px 0;
   }
-  p {
+  .product-sub-description__text {
     font-size: 1.2rem;
     opacity: 0.8;
   }
@@ -318,17 +327,6 @@ a {
 
 .new-item {
   position: relative;
-
-  .product-title {
-    h3 {
-      font-size: 1.8rem;
-      font-weight: normal;
-    }
-    p {
-      font-size: 1.4rem;
-      padding-top: 16px;
-    }
-  }
 
   &:hover {
     .product-new-tag {
@@ -383,15 +381,12 @@ a {
 
 .footer-copyright {
   color: $white-color;
-  span {
-    color: $primary-color;
-  }
 }
 
 .footer-bars {
   display: flex;
 
-  a {
+  .footer-bars__links {
     display: inline-block;
     color: $white-color;
     padding: 0 20px;
@@ -404,7 +399,7 @@ a {
   }
 
   li:first-child {
-    a {
+    .footer-bars__links {
       border: none;
     }
   }
@@ -431,7 +426,7 @@ a {
   .fa-youtube {
     color: #c82929;
   }
-  a {
+  .footer-social__links {
     font-size: 1.6rem;
     display: inline-block;
     margin: 0 6px;
@@ -486,13 +481,9 @@ a {
 }
 
 .footer-contact__info {
-  i {
+  .footer-contact__icon {
     display: inline-block;
     margin-right: 12px;
-  }
-
-  span {
-    color: $primary-color;
   }
 }
 
@@ -502,16 +493,16 @@ a {
 
 // 2
 .gem-posts {
-  li {
+  .gem-posts__items {
     display: flex;
     gap: 10px;
     justify-content: center;
     padding: 15px 0;
   }
-  li:first-child {
+  .gem-posts__items:first-child {
     padding-top: 0;
   }
-  li:last-child {
+  .gem-posts__items:last-child {
     border: none;
   }
 }
@@ -528,14 +519,11 @@ a {
   background-color: $color-6;
 }
 
-.gem-post__content-comment {
+.gem-post__comment {
   display: flex;
   justify-content: space-between;
-
-  p:first-child {
-    color: $primary-color;
-  }
 }
+
 .gem-quantity {
   cursor: pointer;
   transition: all 0.3s;
@@ -545,9 +533,9 @@ a {
   }
 }
 
-.footer-useful-links {
+.footer__useful-links {
   line-height: 1;
-  li {
+  .useful-links__items {
     padding: 12px 0;
     cursor: pointer;
     transition: all 0.3s;
@@ -580,14 +568,14 @@ a {
 }
 
 // 3
-.footer-grid {
+.footer__grid {
   display: flex;
   flex-wrap: wrap;
   gap: 10px 8px;
   justify-content: center;
   width: 100%;
 
-  li {
+  .grid__items {
     width: 80px;
     height: 80px;
     background-color: $color-10;
@@ -601,9 +589,7 @@ a {
   }
 }
 .footer-contact__form {
-  input,
-  textarea,
-  button {
+  .contact-form__items {
     width: 100%;
     padding: 12px 18px;
     border: 1px solid #394050;
@@ -616,15 +602,15 @@ a {
       border-color: $primary-color;
     }
   }
-  button {
-    font-weight: 600;
-    background-color: #394050;
-    cursor: pointer;
-    transition: all 0.3s;
+}
+.contact-form__button {
+  font-weight: 600;
+  background-color: #394050;
+  cursor: pointer;
+  transition: all 0.3s;
 
-    &:hover {
-      background-color: #5f727f;
-    }
+  &:hover {
+    background-color: #5f727f;
   }
 }
 .footer-pagination {
@@ -653,29 +639,21 @@ a {
   width: 100%;
   margin: 35px 0 20px;
 
-  input,
-  button {
+  .newsletter__items {
     padding: 11px 16px;
     border: 1px solid $color-13;
     background-color: $color-7;
     color: $white-color;
     outline: none;
   }
-
-  button {
-    background-color: $color-13;
-  }
-
-  + p {
-    font-size: 1rem;
-    opacity: 0.7;
-  }
 }
+.newsletter__sub-text {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
 .main-footer__section:last-child {
   line-height: 1.6;
-  span {
-    color: $primary-color;
-  }
 }
 
 // BANNER
@@ -690,20 +668,18 @@ a {
   margin: 0 auto;
   padding-top: 220px;
   padding-bottom: 204px;
-
-  h2 {
-    font-size: 8rem;
-    font-weight: 200;
-  }
-
-  p {
-    font-size: 2rem;
-    line-height: 1.5;
-    margin: 100px 0;
-    font-weight: 100;
-  }
 }
-.banner-btn {
+.banner__title {
+  font-size: 8rem;
+  font-weight: 200;
+}
+.banner__desc {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 100px 0;
+  font-weight: 100;
+}
+.banner__btn {
   @include large-btn;
   font-size: 1.8rem;
 }
@@ -756,38 +732,6 @@ a {
 .mobile-modal__body {
   z-index: 10;
 }
-
-.mobile-modal__header {
-  position: relative;
-  margin-bottom: 60px;
-  width: 100%;
-  height: 66px;
-  line-height: 66px;
-
-  img {
-    display: block;
-    margin: 0 auto;
-    padding: 11px 0;
-  }
-
-  i {
-    display: inline-block;
-    font-size: 2.8rem;
-    position: absolute;
-    top: 30%;
-    right: -2px;
-  }
-}
-
-.modal-list {
-  margin: 40px 0;
-  display: none;
-  opacity: 0;
-  overflow: hidden;
-  height: 0;
-  transition: all 0.5s ease;
-}
-
 .modal-text {
   text-align: center;
   font-size: 2.4rem;
@@ -807,6 +751,38 @@ a {
     right: 0%;
   }
 }
+
+.mobile-modal__header {
+  position: relative;
+  margin-bottom: 60px;
+  width: 100%;
+  height: 66px;
+  line-height: 66px;
+
+  .mobile-modal__image {
+    display: block;
+    margin: 0 auto;
+    padding: 11px 0;
+  }
+
+  .fa.fa-close {
+    display: inline-block;
+    font-size: 2.8rem;
+    position: absolute;
+    top: 30%;
+    right: -2px;
+  }
+}
+
+.modal-list {
+  margin: 40px 0;
+  display: none;
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.5s ease;
+}
+
 .show {
   display: block !important;
   opacity: 1 !important;

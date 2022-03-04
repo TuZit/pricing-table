@@ -29,31 +29,53 @@
       <div class="header">
         <div class="container">
           <div class="header-wrap">
-            <a href="#" class="mobile-cart"
+            <a href="#" class="mobile-cart" onclick="handeleShowCart()"
               ><i class="fa-solid fa-cart-shopping"></i
             ></a>
             <a href="#" class="navbar-logo">
-              <img src="./asset/img/logo.webp" alt="logo" />
+              <img
+                class="navbar-logo__image"
+                src="./asset/img/logo.webp"
+                alt="logo"
+              />
             </a>
-            <a href="#" class="mobile-menu"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" class="mobile-menu" onclick="handleShowMobileModal()"
+              ><i class="fa-solid fa-bars"></i
+            ></a>
 
             <ul class="navbar">
-              <li class="navbar-items"><a href="#">HOME</a></li>
-              <li class="navbar-items active-nav"><a href="#">PAGES</a></li>
-              <li class="navbar-items"><a href="#">BLOG</a></li>
-              <li class="navbar-items"><a href="#">PORTFOLIOS</a></li>
-              <li class="navbar-items"><a href="#">FEATURES</a></li>
-              <li class="navbar-items"><a href="#">ELEMENTS</a></li>
               <li class="navbar-items">
-                <a href="#"
+                <a href="#" class="navbar-items__link">HOME</a>
+              </li>
+              <li class="navbar-items active-nav">
+                <a href="#" class="navbar-items__link">PAGES</a>
+              </li>
+              <li class="navbar-items">
+                <a href="#" class="navbar-items__link">BLOG</a>
+              </li>
+              <li class="navbar-items">
+                <a href="#" class="navbar-items__link">PORTFOLIOS</a>
+              </li>
+              <li class="navbar-items">
+                <a href="#" class="navbar-items__link">FEATURES</a>
+              </li>
+              <li class="navbar-items">
+                <a href="#" class="navbar-items__link">ELEMENTS</a>
+              </li>
+              <li class="navbar-items">
+                <a href="#" class="navbar-items__link"
                   ><img src="./asset/img/uk.png" alt="uk" class="uk-logo"
                 /></a>
               </li>
               <li class="navbar-items">
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="navbar-items__link"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
               </li>
               <li class="navbar-items">
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" class="navbar-items__link"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -132,27 +154,38 @@
                 </div>
 
                 <div class="product-price border">
-                  <h4>$10</h4>
-                  <p>Per Month</p>
+                  <h4 class="product-price__number">$10</h4>
+                  <p class="product-price__text">Per Month</p>
                 </div>
 
                 <div class="product-description border">
                   <div class="product-sub-description"></div>
                   <ul>
-                    <li>Drop down ramen hustle</li>
-                    <li>Coworrking viral landing</li>
-                    <li class="disable-text">Crush revenue traction</li>
-                    <li class="disable-text">User base minimum viable</li>
-                    <li class="disable-text">Lorem ipsum dolor</li>
+                    <li class="product-description__text">
+                      Drop down ramen hustle
+                    </li>
+                    <li class="product-description__text">
+                      Coworrking viral landing
+                    </li>
+                    <li class="product-description__text" class="disable-text">
+                      Crush revenue traction
+                    </li>
+                    <li class="product-description__text" class="disable-text">
+                      User base minimum viable
+                    </li>
+                    <li class="product-description__text" class="disable-text">
+                      Lorem ipsum dolor
+                    </li>
                   </ul>
 
-                  <button>
+                  <button class="product-description__button">
                     <i class="fa-solid fa-caret-right"></i>
                     ORDER
                   </button>
                 </div>
                 <div class="products-items__effect-bot space"></div>
               </div>
+
               <div class="products-items">
                 <div class="space products-items__effect-top"></div>
 
@@ -161,21 +194,31 @@
                 </div>
 
                 <div class="product-price background-color-3 border">
-                  <h4>$45</h4>
-                  <p>Per Month</p>
+                  <h4 class="product-price__number">$45</h4>
+                  <p class="product-price__text">Per Month</p>
                 </div>
 
                 <div class="product-description border">
                   <div class="product-sub-description"></div>
                   <ul>
-                    <li>Drop down ramen hustle</li>
-                    <li>Coworrking viral landing</li>
-                    <li class="disable-text">Crush revenue traction</li>
-                    <li class="disable-text">User base minimum viable</li>
-                    <li class="disable-text">Lorem ipsum dolor</li>
+                    <li class="product-description__text">
+                      Drop down ramen hustle
+                    </li>
+                    <li class="product-description__text">
+                      Coworrking viral landing
+                    </li>
+                    <li class="product-description__text" class="disable-text">
+                      Crush revenue traction
+                    </li>
+                    <li class="product-description__text" class="disable-text">
+                      User base minimum viable
+                    </li>
+                    <li class="product-description__text" class="disable-text">
+                      Lorem ipsum dolor
+                    </li>
                   </ul>
 
-                  <button>
+                  <button class="product-description__button">
                     <i class="fa-solid fa-caret-right"></i>
                     ORDER
                   </button>
@@ -183,36 +226,53 @@
 
                 <div class="space products-items__effect-bot"></div>
               </div>
+
               <div class="products-items new-item">
                 <div class="product-new-tag">NEW</div>
                 <div class="space products-items__effect-top"></div>
 
                 <div class="product-title-container border">
                   <div class="product-title">
-                    <h3>MASTER</h3>
-                    <p>The best price/quantity plan *</p>
+                    <h3 class="product-title__main">MASTER</h3>
+                    <p class="product-title__sub">
+                      The best price/quantity plan *
+                    </p>
                   </div>
                 </div>
 
                 <div class="product-price background-color-4 border">
-                  <h4>$249</h4>
-                  <p>Per Month</p>
+                  <h4 class="product-price__number">$249</h4>
+                  <p class="product-price__text">Per Month</p>
                 </div>
 
                 <div class="product-description border">
                   <div class="product-sub-description">
-                    <h4>Subtitle Goes Here</h4>
-                    <p>Subtitle second inline goes here</p>
+                    <h4 class="product-sub-description__title">
+                      Subtitle Goes Here
+                    </h4>
+                    <p class="product-sub-description__text">
+                      Subtitle second inline goes here
+                    </p>
                   </div>
                   <ul>
-                    <li>Drop down ramen hustle</li>
-                    <li>Coworrking viral landing</li>
-                    <li class="disable-text">Crush revenue traction</li>
-                    <li class="disable-text">User base minimum viable</li>
-                    <li class="disable-text">Lorem ipsum dolor</li>
+                    <li class="product-description__text">
+                      Drop down ramen hustle
+                    </li>
+                    <li class="product-description__text">
+                      Coworrking viral landing
+                    </li>
+                    <li class="product-description__text" class="disable-text">
+                      Crush revenue traction
+                    </li>
+                    <li class="product-description__text" class="disable-text">
+                      User base minimum viable
+                    </li>
+                    <li class="product-description__text" class="disable-text">
+                      Lorem ipsum dolor
+                    </li>
                   </ul>
 
-                  <button>
+                  <button class="product-description__button">
                     <i class="fa-solid fa-caret-right"></i>
                     ORDER
                   </button>
@@ -227,21 +287,36 @@
                 </div>
 
                 <div class="product-price background-color-5 border">
-                  <h4>$1399</h4>
-                  <p>Per Month</p>
+                  <h4 class="product-price__number">$1399</h4>
+                  <p
+                    class="product-price__text"
+                    class="product-description__text"
+                  >
+                    Per Month
+                  </p>
                 </div>
 
                 <div class="product-description border">
                   <div class="product-sub-description"></div>
                   <ul>
-                    <li>Drop down ramen hustle</li>
-                    <li>Coworrking viral landing</li>
-                    <li class="disable-text">Crush revenue traction</li>
-                    <li class="disable-text">User base minimum viable</li>
-                    <li class="disable-text">Lorem ipsum dolor</li>
+                    <li class="product-description__text">
+                      Drop down ramen hustle
+                    </li>
+                    <li class="product-description__text">
+                      Coworrking viral landing
+                    </li>
+                    <li class="product-description__text" class="disable-text">
+                      Crush revenue traction
+                    </li>
+                    <li class="product-description__text" class="disable-text">
+                      User base minimum viable
+                    </li>
+                    <li class="product-description__text" class="disable-text">
+                      Lorem ipsum dolor
+                    </li>
                   </ul>
 
-                  <button>
+                  <button class="product-description__button">
                     <i class="fa-solid fa-caret-right"></i>
                     ORDER
                   </button>
@@ -289,15 +364,15 @@
               </svg>
             </span>
 
-            <h2>AD BLOCK</h2>
-            <p>
+            <h2 class="banner__title">AD BLOCK</h2>
+            <p class="banner__desc">
               TheGem is multi-purpose wordpress theme for creative agencies,
               business of any kind, online stores, designers, photographers,
               freelancers, bloggers etc. – TheGem delivers everything to cover
               your ambitions & creative needs! Grab this theme now and start
               building the website of your dreams!
             </p>
-            <button class="banner-btn">PURCHASE NOW</button>
+            <button class="banner__btn">PURCHASE NOW</button>
           </div>
         </div>
       </div>
@@ -325,7 +400,8 @@
 
                 <div class="footer-contact__info pb-36 bottom-dash">
                   <p class="address-location-pin">
-                    <i class="fa-solid fa-location-dot"></i>Address:
+                    <i class="fa-solid fa-location-dot footer-contact__icon"></i
+                    >Address:
                   </p>
                   <p>908 New Hampshire Anenue Northwest</p>
                   <p>#100 Washington, DC</p>
@@ -334,18 +410,22 @@
 
                 <div class="footer-contact__info pt-36">
                   <p class="p-4">
-                    <i class="fa-solid fa-headphones"></i>Phone: +1 916-875-2235
+                    <i class="fa-solid fa-headphones footer-contact__icon"></i
+                    >Phone: +1 916-875-2235
                   </p>
                   <p class="p-4">
-                    <i class="fa-solid fa-fax"></i>Fax: +1 916-875-2235
+                    <i class="fa-solid fa-fax footer-contact__icon"></i>Fax: +1
+                    916-875-2235
                   </p>
                   <p class="p-4">
-                    <i class="fa-solid fa-envelope"></i>Email:
-                    <span>info@gmail.com</span>
+                    <i class="fa-solid fa-envelope footer-contact__icon"></i
+                    >Email:
+                    <span class="primary-color">info@gmail.com</span>
                   </p>
                   <p class="p-4">
-                    <i class="fa-solid fa-globe"></i>Website:
-                    <span>www.codex-themes.com</span>
+                    <i class="fa-solid fa-globe footer-contact__icon"></i
+                    >Website:
+                    <span class="primary-color">www.codex-themes.com</span>
                   </p>
                 </div>
               </div>
@@ -355,14 +435,14 @@
               <div class="main-footer__section section-min-height mb-0">
                 <h3 class="footer-title">RECENT POST</h3>
                 <ul class="gem-posts">
-                  <li class="bottom-dash">
+                  <li class="bottom-dash gem-posts__items">
                     <div class="gem-post__img"></div>
                     <div class="gem-post__content">
                       <p>
                         Proin gravica nibh vel velit actour aliquet aerean...
                       </p>
-                      <div class="gem-post__content-comment">
-                        <p>27 Dec 2015</p>
+                      <div class="gem-post__comment">
+                        <p class="primary-color">27 Dec 2015</p>
                         <p class="gem-quantity">
                           <i class="fa-solid fa-comments"></i>
                           0
@@ -370,14 +450,14 @@
                       </div>
                     </div>
                   </li>
-                  <li class="bottom-dash">
+                  <li class="bottom-dash gem-posts__items">
                     <div class="gem-post__img"></div>
                     <div class="gem-post__content">
                       <p>
                         Proin gravica nibh vel velit actour aliquet aerean...
                       </p>
-                      <div class="gem-post__content-comment">
-                        <p>27 Dec 2015</p>
+                      <div class="gem-post__comment">
+                        <p class="primary-color">27 Dec 2015</p>
                         <p class="gem-quantity">
                           <i class="fa-solid fa-comments"></i>
                           14
@@ -385,14 +465,14 @@
                       </div>
                     </div>
                   </li>
-                  <li class="bottom-dash">
+                  <li class="bottom-dash gem-posts__items">
                     <div class="gem-post__img"></div>
                     <div class="gem-post__content">
                       <p>
                         Proin gravica nibh vel velit actour aliquet aerean...
                       </p>
-                      <div class="gem-post__content-comment">
-                        <p>27 Dec 2015</p>
+                      <div class="gem-post__comment">
+                        <p class="primary-color">27 Dec 2015</p>
                         <p class="gem-quantity">
                           <i class="fa-solid fa-comments"></i>
                           0
@@ -405,22 +485,22 @@
 
               <div class="main-footer__section section-min-height mb-0">
                 <h3 class="footer-title">USEFUL LINKS</h3>
-                <ul class="footer-useful-links">
-                  <li class="bottom-dash">
+                <ul class="footer__useful-links">
+                  <li class="bottom-dash useful-links__items">
                     <span class="markup-dot">*</span>
                     General Information For Users
                   </li>
-                  <li class="bottom-dash">
+                  <li class="bottom-dash useful-links__items">
                     <span class="markup-dot">*</span>Interactive Fairy Tales
                   </li>
-                  <li class="bottom-dash">
+                  <li class="bottom-dash useful-links__items">
                     <span class="markup-dot">*</span>Offical Storybook Maker
                     Wensite
                   </li>
-                  <li class="bottom-dash">
+                  <li class="bottom-dash useful-links__items">
                     <span class="markup-dot">*</span>Everyday Mathematic Links
                   </li>
-                  <li class="bottom-dash">
+                  <li class="bottom-dash useful-links__items">
                     <span class="markup-dot">*</span>Basic Knowledge Experience
                   </li>
                 </ul>
@@ -431,23 +511,37 @@
               <div class="main-footer__section section-min-height mb-0">
                 <h3 class="footer-title">EMAIL US</h3>
                 <form class="footer-contact__form">
-                  <input type="text" placeholder="Your name" />
-                  <input type="text" placeholder="your@email.address" />
-                  <textarea rows="4" placeholder="Your Message"></textarea>
-                  <button>SEND MESSAGE</button>
+                  <input
+                    class="contact-form__items"
+                    type="text"
+                    placeholder="Your name"
+                  />
+                  <input
+                    class="contact-form__items"
+                    type="text"
+                    placeholder="your@email.address"
+                  />
+                  <textarea
+                    class="contact-form__items"
+                    rows="4"
+                    placeholder="Your Message"
+                  ></textarea>
+                  <button class="contact-form__button contact-form__items">
+                    SEND MESSAGE
+                  </button>
                 </form>
               </div>
 
               <div class="main-footer__section section-min-height mb-0">
                 <h3 class="footer-title">PROJECTS / CLIENTS ?</h3>
 
-                <ul class="footer-grid">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                <ul class="footer__grid">
+                  <li class="grid__items"></li>
+                  <li class="grid__items"></li>
+                  <li class="grid__items"></li>
+                  <li class="grid__items"></li>
+                  <li class="grid__items"></li>
+                  <li class="grid__items"></li>
                 </ul>
 
                 <div class="footer-pagination">
@@ -461,16 +555,16 @@
             <div class="main-footer__items">
               <div class="main-footer__section section-min-height mb-0">
                 <h3 class="footer-title">FLICKR FEED</h3>
-                <ul class="footer-grid">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                <ul class="footer__grid">
+                  <li class="grid__items"></li>
+                  <li class="grid__items"></li>
+                  <li class="grid__items"></li>
+                  <li class="grid__items"></li>
+                  <li class="grid__items"></li>
+                  <li class="grid__items"></li>
+                  <li class="grid__items"></li>
+                  <li class="grid__items"></li>
+                  <li class="grid__items"></li>
                 </ul>
               </div>
 
@@ -481,10 +575,19 @@
                   all events coming straight in your email:
                 </p>
                 <form class="footer-newsletter__form">
-                  <input type="text" placeholder="Your email address" />
-                  <button><i class="fa-solid fa-angle-right"></i></button>
+                  <input
+                    class="newsletter__items"
+                    type="text"
+                    placeholder="Your email address"
+                  />
+                  <button class="newsletter__items">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </button>
                 </form>
-                <p><span>*</span> Personal information will be encrypted</p>
+                <p class="newsletter__sub-text">
+                  <span class="primary-color">*</span> Personal information will
+                  be encrypted
+                </p>
               </div>
             </div>
           </div>
@@ -495,31 +598,45 @@
       <div class="sub-footer">
         <div class="container">
           <div class="sub-footer-container">
-            <p class="footer-copyright">2021 © <span>CodexThemes</span></p>
+            <p class="footer-copyright">
+              2021 © <span class="primary-color">CodexThemes</span>
+            </p>
             <ul class="footer-bars">
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Disclaimer</a></li>
-              <li><a href="#">Add more</a></li>
+              <li><a class="footer-bars__links" href="#">Support</a></li>
+              <li><a class="footer-bars__links" href="#">Contact Us</a></li>
+              <li><a class="footer-bars__links" href="#">Disclaimer</a></li>
+              <li><a class="footer-bars__links" href="#">Add more</a></li>
             </ul>
             <ul class="footer-social">
               <li>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="footer-social__links" href="#"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="footer-social__links" href="#"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a class="footer-social__links" href="#"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="footer-social__links" href="#"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a class="footer-social__links" href="#"
+                  ><i class="fa-brands fa-pinterest-p"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a class="footer-social__links" href="#"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -533,9 +650,15 @@
         <div class="container">
           <div class="mobile-modal__body">
             <div class="mobile-modal__header">
-              <img src="./asset/img/logo.webp" alt="" />
+              <img
+                class="mobile-modal__image"
+                src="./asset/img/logo.webp"
+                alt=""
+              />
 
-              <span class="close-modal"><i class="fa fa-close"></i></span>
+              <span class="close-modal" onclick="handleCloseMobileModal()"
+                ><i class="fa fa-close"></i
+              ></span>
             </div>
             <div class="mobile-modal__items">
               <h3 class="modal-text modal-nav">
@@ -733,7 +856,9 @@
               <span>
                 <i class="fa-solid fa-cart-shopping"></i> <strong>CART</strong>
               </span>
-              <span class="close-cart-modal"><i class="fa fa-close"></i></span>
+              <span class="close-cart-modal" onclick="handleHideCart()"
+                ><i class="fa fa-close"></i
+              ></span>
             </div>
             <p class="cart-modal__text">No products in the cart</p>
           </div>

@@ -1,6 +1,7 @@
 // show go to top button
 const topBtn = document.querySelector(".go-top");
-window.addEventListener("scroll", () => {
+
+function handleShowGoToTop() {
   if (
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
@@ -9,16 +10,20 @@ window.addEventListener("scroll", () => {
   } else {
     topBtn.style.display = "none";
   }
-});
+}
+
+// window.addEventListener("scroll", handleShowGoToTop);
 
 // show/hide modal content
 const modalNav = document.querySelectorAll(".modal-nav");
 const modalList = document.querySelectorAll(".modal-list");
 
 modalNav.forEach((item, index) => {
-  item.addEventListener("click", () => {
+  const handelShowModalContent = () => {
     modalList[index].classList.toggle("show");
-  });
+  };
+
+  item.addEventListener("click", handelShowModalContent);
 });
 
 // show/hide modal
@@ -26,22 +31,28 @@ const openModal = document.querySelector(".mobile-menu");
 const closeModal = document.querySelector(".close-modal");
 const mobileModal = document.querySelector(".mobile-modal");
 
-openModal.addEventListener("click", () => {
+const handleShowMobileModal = () => {
   mobileModal.classList.add("show");
-});
-closeModal.addEventListener("click", () => {
+};
+const handleCloseMobileModal = () => {
   mobileModal.classList.remove("show");
-});
+};
+
+// openModal.addEventListener("click", handleShowMobileModal);
+// closeModal.addEventListener("click", handleCloseMobileModal);
 
 // show/hide mobile cart modal
 const closeCart = document.querySelector(".close-cart-modal");
 const openCart = document.querySelector(".mobile-cart");
 const cartModal = document.querySelector(".cart-modal");
 
-openCart.addEventListener("click", (e) => {
-  e.preventDefault();
+const handeleShowCart = (e) => {
+  // e.preventDefault();
   cartModal.style.transform = "translateX(0)";
-});
-closeCart.addEventListener("click", () => {
+};
+const handleHideCart = () => {
   cartModal.style.transform = "translateX(-100%)";
-});
+};
+
+// openCart.addEventListener("click", handeleShowCart);
+// closeCart.addEventListener("click", handleHideCart);
