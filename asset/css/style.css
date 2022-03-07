@@ -741,6 +741,10 @@ a {
   z-index: 100;
   display: none;
 }
+.go-top:hover {
+  background-color: #00bcd4;
+  opacity: 1;
+}
 
 .mobile-modal,
 .cart-modal {
@@ -751,6 +755,7 @@ a {
   color: #212331;
   overflow: auto;
   display: none;
+  z-index: 100;
 }
 
 .mobile-modal__body {

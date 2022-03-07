@@ -701,6 +701,11 @@ a {
   bottom: 82px;
   z-index: 100;
   display: none;
+
+  &:hover {
+    background-color: $primary-color;
+    opacity: 1;
+  }
 }
 
 // mobile modal
@@ -713,6 +718,7 @@ a {
   color: $color-6;
   overflow: auto;
   display: none;
+  z-index: 100;
 }
 .mobile-modal__body {
   z-index: 10;
