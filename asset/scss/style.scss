@@ -242,6 +242,7 @@ a {
 
 .product-title {
   font-size: 1.8rem;
+  font-weight: normal;
   padding: 36px 0;
   transition: all 0.4s;
 }
@@ -684,23 +685,7 @@ a {
   font-size: 1.8rem;
 }
 .sword-icon {
-  display: inline-block;
-  padding: 10px;
-  border: 4px solid $icon-color-1;
-  border-radius: 50%;
   margin-bottom: 72px;
-  cursor: pointer;
-  transition: all 0.3s;
-
-  &:hover {
-    border-color: $icon-color-2;
-
-    svg {
-      g:last-of-type {
-        fill: $icon-color-2;
-      }
-    }
-  }
 }
 
 // Go top btn
@@ -724,7 +709,7 @@ a {
   position: fixed;
   width: 100%;
   inset: 0;
-  background-color: $white-color;
+  background-color: rgb(223, 217, 215);
   color: $color-6;
   overflow: auto;
   display: none;
