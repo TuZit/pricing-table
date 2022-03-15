@@ -40,3 +40,5 @@ const handeleShowCart = (e) => {
 const handleHideCart = () => {
   cartModal.style.transform = "translateX(-100%)";
 };
+
+// validation

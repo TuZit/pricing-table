@@ -120,6 +120,13 @@ a {
 .introduce__title {
   font-size: 5rem;
 }
+.introduce__title--lighter {
+  font-weight: 200;
+}
+
+.introduce__title--bold {
+  font-weight: 800;
+}
 .introduce__description {
   font-size: 2rem;
   font-weight: 200;
@@ -149,7 +156,7 @@ a {
   margin: 0 8px;
   outline: 3px solid $white-color;
 }
-.dot.dot-active {
+.dot.dot--active {
   background-color: $primary-color;
 }
 
@@ -188,6 +195,12 @@ a {
   font-size: 3.6rem;
   text-align: center;
 }
+.services__title--lighter {
+  font-weight: 200;
+}
+.services__title--bold {
+  font-weight: 800;
+}
 .services__description {
   line-height: 1.5;
   font-size: 1.6rem;
@@ -213,7 +226,8 @@ a {
   &:hover {
     background-color: $white-color;
 
-    .space {
+    .products-items__effect--bot,
+    .products-items__effect--top {
       transform: scaleY(2.5);
     }
 
@@ -223,14 +237,14 @@ a {
   }
 }
 
-.products-items__effect-bot {
+.products-items__effect--bot {
   border-top: none !important;
+  transition: all 0.4s;
+  height: 20px;
+  border: 1px solid $color-19;
 }
-.products-items__effect-top {
+.products-items__effect--top {
   border-bottom: none !important;
-}
-
-.space {
   transition: all 0.4s;
   height: 20px;
   border: 1px solid $color-19;
@@ -238,6 +252,9 @@ a {
 
 .product-title__container {
   min-height: 120px;
+  border: 1px solid $color-19;
+  border-bottom: none !important;
+  border-top: none !important;
 }
 
 .product-title {
@@ -259,6 +276,9 @@ a {
   background-color: $color-2;
   color: $white-color;
   padding: 36px 0;
+  border: 1px solid $color-19;
+  border-bottom: none !important;
+  border-top: none !important;
 
   .product-price__number {
     font-size: 5rem;
@@ -272,6 +292,9 @@ a {
 
 .product-description {
   transition: all 0.4s;
+  border: 1px solid $color-19;
+  border-bottom: none !important;
+  border-top: none !important;
 
   .product-description__text {
     font-size: 1.4rem;
@@ -316,13 +339,19 @@ a {
   }
 }
 
-.background-color-3 {
+.product-sub-description__text--disable {
+  text-decoration: line-through;
+  font-size: 1.4rem;
+  padding: 20px 0;
+  border-top: 1px solid $color-19;
+}
+.product-price--color-3 {
   background-color: $color-3;
 }
-.background-color-4 {
+.product-price--color-4 {
   background-color: $color-4;
 }
-.background-color-5 {
+.product-price--color-5 {
   background-color: $color-5;
 }
 
@@ -472,6 +501,13 @@ a {
 .main-footer__section {
   margin: 70px 0;
 }
+.main-footer__section--m0 {
+  margin: 0 !important;
+
+  p {
+    padding-bottom: 50px;
+  }
+}
 
 // 1
 .gem-logo--bot {
@@ -481,11 +517,22 @@ a {
   margin-bottom: 46px;
 }
 
-.footer-contact__info {
-  .footer-contact__icon {
-    display: inline-block;
-    margin-right: 12px;
-  }
+.footer-contact__icon {
+  display: inline-block;
+  margin-right: 12px;
+}
+.footer-contact__info--paddingBot {
+  padding-bottom: 36px;
+  border-bottom: 1px dashed $color-17;
+}
+.footer-contact__info--paddingTop {
+  padding-top: 36px;
+}
+.footer-contact__text {
+  padding: 4px;
+}
+.footer-contact__text--color {
+  color: $primary-color;
 }
 
 .address-location-pin {
@@ -499,6 +546,7 @@ a {
     gap: 10px;
     justify-content: center;
     padding: 15px 0;
+    border-bottom: 1px dashed $color-17;
   }
   .gem-posts__items:first-child {
     padding-top: 0;
@@ -536,34 +584,31 @@ a {
 
 .footer__useful-links {
   line-height: 1;
-  .useful-links__items {
-    padding: 12px 0;
-    cursor: pointer;
-    transition: all 0.3s;
+}
+.useful-links__items {
+  padding: 12px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-bottom: 1px dashed $color-17;
 
-    &:last-of-type {
-      border: none;
-    }
-    &:first-of-type {
-      padding-top: 0;
-    }
-
-    &:hover {
-      color: $primary-color;
-
-      .markup-dot {
-        color: $white-color;
-      }
-    }
+  &:last-of-type {
+    border: none;
+  }
+  &:first-of-type {
+    padding-top: 0;
   }
 
-  .markup-dot {
-    display: inline-block;
-    margin-right: 10px;
-    transition: all 0.3s;
+  &:hover {
+    color: $primary-color;
+
+    .markup-dot {
+      color: $white-color;
+    }
   }
 }
+
 .markup-dot {
+  transition: all 0.3s;
   display: inline-block;
   margin-right: 10px;
 }
@@ -657,6 +702,9 @@ a {
   line-height: 1.6;
 }
 
+.section-min-height {
+  min-height: 357px;
+}
 // BANNER
 
 .banner {
