@@ -44,13 +44,6 @@ a {
   }
 }
 
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 21px;
-}
-
 // main
 .main {
   line-height: 1;
@@ -464,15 +457,13 @@ a {
 
 // main footer
 .main-footer__container {
-  column-gap: 42px;
   color: $footer-text;
   font-size: 1.3rem;
   line-height: 1.5;
 }
 
 .main-footer__items {
-  flex-basis: 22%;
-  min-width: 261px;
+  // min-width: 261px;
 }
 
 .footer__title {
