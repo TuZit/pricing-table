@@ -45,12 +45,14 @@
   .introduce__pagination {
     padding: 46px 0;
   }
-
+  .introduce__button {
+    button {
+      margin-bottom: 20px;
+    }
+  }
   // services
   .services__products {
-    flex-wrap: wrap;
     gap: 60px;
-    padding: 0 70px;
   }
   .products-items {
     flex-basis: 100%;
