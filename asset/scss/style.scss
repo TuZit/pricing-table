@@ -208,16 +208,11 @@ a {
 }
 
 .services__products {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   row-gap: 60px;
   padding-top: 40px;
 }
 
 .products-items {
-  flex-basis: 25%;
   min-width: 270px;
   text-align: center;
   background-color: $color-1;
@@ -412,6 +407,9 @@ a {
 .footer-copyright {
   color: $white-color;
 }
+.footer-copyright--color {
+  color: $primary-color;
+}
 
 .footer-bars {
   display: flex;
@@ -466,10 +464,6 @@ a {
 
 // main footer
 .main-footer__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   column-gap: 42px;
   color: $footer-text;
   font-size: 1.3rem;
@@ -505,7 +499,7 @@ a {
   margin: 0 !important;
 
   p {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 }
 
@@ -571,6 +565,9 @@ a {
 .gem-post__comment {
   display: flex;
   justify-content: space-between;
+}
+.gem-post__comment--color {
+  color: $primary-color;
 }
 
 .gem-quantity {
@@ -696,6 +693,9 @@ a {
 .newsletter__sub-text {
   font-size: 1rem;
   opacity: 0.7;
+}
+.newsletter__sub-text--color {
+  color: $primary-color;
 }
 
 .main-footer__section:last-child {
