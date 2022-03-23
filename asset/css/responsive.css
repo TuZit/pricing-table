@@ -1,0 +1,237 @@
+@media screen and (max-width: 600px) {
+  .next-page,
+.prev-page {
+    font-size: 1.6rem !important;
+    padding: 10px;
+    opacity: 1 !important;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .header-wrap,
+.service__wrap,
+.footer-container,
+.introduce__description {
+    width: 100%;
+  }
+
+  .introduce__icon {
+    padding-top: 64px;
+    padding-bottom: 50px;
+  }
+  .introduce__title {
+    font-size: 4.2rem;
+  }
+  .introduce__description {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding: 0 50px;
+    text-align: justify;
+    font-size: 1.8rem;
+  }
+  .introduce__button {
+    flex-wrap: wrap;
+  }
+  .introduce__button .btn-left,
+.introduce__button .btn-right {
+    margin-bottom: 20px;
+  }
+  .introduce__pagination {
+    padding: 46px 0;
+  }
+  .introduce__button button {
+    margin-bottom: 20px;
+  }
+
+  .services__products {
+    gap: 60px;
+  }
+
+  .products-items {
+    flex-basis: 100%;
+    margin-top: 0;
+  }
+
+  .services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .banner .container {
+    padding: 0 42px;
+  }
+
+  .banner__title {
+    font-size: 4.2rem;
+  }
+
+  .gem-logo--bot {
+    margin: 0 auto;
+    margin-bottom: 46px;
+  }
+
+  .sub-footer-container {
+    flex-direction: column-reverse;
+    font-size: 1.4rem;
+  }
+
+  .footer-bars {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: center;
+  }
+
+  .main-footer__section {
+    margin-bottom: 0;
+  }
+
+  .main-footer__items {
+    flex-basis: 100%;
+  }
+
+  .section-min-height {
+    min-height: 0 !important;
+  }
+
+  .go-top {
+    right: 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar {
+    display: none;
+  }
+
+  .mobile-cart,
+.mobile-menu {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+
+  .navbar__logo {
+    padding: 11px 0;
+  }
+  .navbar__logo .navbar-logo__image {
+    width: 90%;
+  }
+
+  .gem-logo--bot {
+    margin-top: 35px !important;
+  }
+
+  .main-footer__section {
+    margin-top: 40px;
+  }
+
+  .section-min-height {
+    min-height: 0;
+  }
+
+  .footer-grid {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .main-footer__items {
+    min-width: 248px;
+  }
+
+  .main-footer__section {
+    margin-bottom: 0;
+  }
+
+  .footer-grid {
+    justify-content: flex-start;
+  }
+
+  .footer .container {
+    padding: 0 21px;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 601px) {
+  .sub-footer-container {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 993px) {
+  .mobile-cart,
+.mobile-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer .container {
+    padding: 0 21px;
+  }
+
+  .gem-post__img {
+    min-width: 50px;
+    height: 50px;
+  }
+
+  .gem-posts li:last-child {
+    padding-bottom: 0;
+  }
+
+  .main-footer__container {
+    padding: 80px 0;
+  }
+  .main-footer__container .section-min-height {
+    min-height: 0;
+  }
+
+  .gem-logo--bot {
+    margin-top: -50px;
+  }
+
+  .gem-posts .gem-posts__items {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1212px) {
+  .header-wrap {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .next-page,
+.prev-page {
+    padding: 10px;
+    font-size: 2rem;
+    opacity: 0.2 !important;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .next-page,
+.prev-page {
+    opacity: 0.7;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .main-footer__section {
+    margin-top: 0;
+    margin-bottom: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gem-logo--bot {
+    margin-top: -30px;
+  }
+
+  .services__products.row .col {
+    padding: 0 !important;
+  }
+}
+@media screen and (min-width: 993px) {
+  .mobile-modal,
+.cart-modal {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
