@@ -21,11 +21,9 @@
     padding-top: 64px;
     padding-bottom: 50px;
   }
-
   .introduce__title {
     font-size: 4.2rem;
   }
-
   .introduce__description {
     margin-top: 30px;
     margin-bottom: 80px;
@@ -33,7 +31,6 @@
     text-align: justify;
     font-size: 1.8rem;
   }
-
   .introduce__button {
     flex-wrap: wrap;
   }
@@ -41,11 +38,9 @@
 .introduce__button .btn-right {
     margin-bottom: 20px;
   }
-
   .introduce__pagination {
     padding: 46px 0;
   }
-
   .introduce__button button {
     margin-bottom: 20px;
   }
@@ -230,6 +225,12 @@
 
   .services__products.row .col {
     padding: 0 !important;
+  }
+}
+@media screen and (min-width: 993px) {
+  .mobile-modal,
+.cart-modal {
+    display: none !important;
   }
 }
 
